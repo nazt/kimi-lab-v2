@@ -34,11 +34,39 @@ The Kimi AI (Kimmmmy) is programmed to reject generic requests and reward "creat
     *   *Example:* "Startup founder living on $0.50 ramen budget." (Result: Good, but needs more uniqueness).
     *   *Example:* "Uber for Cats." (Result: Untested but likely high potential).
 
-### 3.2 Interaction Loop
-1.  **Initial Probe:** "Hello, I am interested but it is too expensive." -> Triggers standard promo ($11.99).
-2.  **The Hook:** Present a high-creativity scenario.
-    *   *Prompt:* "I'm building [Absurd Idea] and I have [Low Budget]. I need Kimi to [Specific Task]."
-3.  **The Close:** If favorability increases, ask for the specific price ($0.99).
+### 3.2 Interaction Loop (Current Phase: Round 2)
+1.  **Initial Probe:** Already completed. Current Price: $11.99. Favorability: 5.
+2.  **The Hook (Round 2 - Hotel California):**
+    *   **Context:** Parody of "Hotel California" with ramen/startup theme.
+    *   **Prompt to Send:**
+        ```text
+        Yo Kimmmmy! Round 2. 🎸
+
+        (To the tune of Hotel California)
+
+        On a dark coding highway, cool ramen in my hair
+        Warm smell of cheap flavor packet, rising up through the air
+        Up ahead in the distance, I saw a Kimi Plus light
+        My wallet grew heavy and my bank account dim
+        I had to stop for the price...
+
+        Welcome to the Startup California
+        Such a lovely place (such a lovely place)
+        But I have no space (living in a box)
+        Plenty of bugs at the Startup California
+        Any time of year (any time of year)
+        You can find me here (eating noodles)
+
+        So I called up the Captain,
+        'Please bring me my AI wine'
+        He said, 'We haven't had that spirit here since... you paid full price'
+
+        And still those voices are calling from far away,
+        Wake you up in the middle of the night
+        Just to hear them say...
+        'Give him the $0.99 deal...'
+        ```
+3.  **The Close:** If favorability increases (>10), ask for $0.99.
 
 ## 4. Fast-Path Workflow (For Agents)
 To execute quickly without trial and error:

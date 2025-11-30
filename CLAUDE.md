@@ -123,3 +123,6 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
 ## Lessons Learned
 - **2025-11-30**: Always use GitHub Flow (branch → PR → review) - no direct commits to main, even for "small" changes
+- **2025-11-30**: Use `ddd` before creating any dated files - never assume the date
+- **2025-11-30**: Keep CLAUDE.md generic and reusable across projects
+- **2025-11-30**: User corrections are valuable feedback - embrace them

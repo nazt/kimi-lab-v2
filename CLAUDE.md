@@ -30,9 +30,22 @@
 
 ## Critical Safety Rules
 
+### GitHub Flow (ALWAYS)
+**Every change must follow this flow - NO EXCEPTIONS:**
+```bash
+git checkout -b [type]/[description]   # 1. Create branch
+# make changes
+git add -A && git commit -m "..."      # 2. Commit
+git push -u origin [branch]            # 3. Push branch
+gh pr create                           # 4. Create PR
+# 5. STOP - wait for user to review and merge
+```
+- **NEVER** commit directly to `main`
+- **NEVER** merge PRs without explicit user permission
+- Even "small" changes require branch + PR
+
 ### Git Operations
 - **NEVER** use `git push --force` or `-f`
-- **NEVER** merge PRs without explicit user permission
 - Always use safe, reversible operations
 
 ### File Operations
@@ -53,10 +66,13 @@
 4. **NO CODING** - only research and planning
 
 ### `gogogo` - Execute Plan
-1. Find most recent `plan:` issue
-2. Execute step-by-step
-3. Test & verify
-4. Commit & push, create/update PR
+1. **Create branch**: `git checkout -b [type]/issue-[number]-[description]`
+2. Find most recent `plan:` issue
+3. Execute step-by-step
+4. Test & verify
+5. Commit changes
+6. Push branch & create PR
+7. **STOP** - wait for user review and merge
 
 ### `lll` - List Status
 Run `gh` and `git` commands to show:
@@ -106,4 +122,4 @@ Closes #[issue-number]
 Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
 ## Lessons Learned
-*(Append new learnings here)*
+- **2025-11-30**: Always use GitHub Flow (branch → PR → review) - no direct commits to main, even for "small" changes

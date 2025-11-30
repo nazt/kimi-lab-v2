@@ -8,6 +8,7 @@
 - `gogogo` - Execute the most recent plan issue step-by-step
 - `lll` - List project status (issues, PRs, commits)
 - `rrr` - Create detailed session retrospective
+- `ddd` - Quick date/time check (GMT+7)
 
 ## Working Style
 
@@ -63,6 +64,24 @@ Run `gh` and `git` commands to show:
 - Recent PRs
 - Current branch status
 - Recent commits
+
+### `ddd` - Date/Time Check
+Quick verification of current date and time.
+
+**When to use:**
+- Before creating dated files (retrospectives, context snapshots)
+- Before adding timestamps to issues or commits
+- Whenever unsure about current date/time
+
+**Output:**
+- Current date (YYYY-MM-DD)
+- Current time (HH:MM)
+- Timezone confirmation (GMT+7 Bangkok)
+
+**Command:**
+```bash
+date "+%Y-%m-%d %H:%M %Z"
+```
 
 ### `rrr` - Retrospective
 Create `retrospectives/YYYY/MM/YYYY-MM-DD_HH-MM_retrospective.md` with:

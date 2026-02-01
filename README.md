@@ -37,6 +37,13 @@ An experimental negotiation lab where Nat and Claude collaborate on a creative c
 | [#5](https://github.com/nazt/kimi-lab-v2/issues/5) | plan: Add ddd command | ✅ Added to CLAUDE.md |
 | [#7](https://github.com/nazt/kimi-lab-v2/issues/7) | plan: Update lessons learned | ✅ Merged to main |
 
+## Read More
+
+| Document | Description |
+|----------|-------------|
+| **[STRATEGY.md](STRATEGY.md)** | Complete strategy guide - what works, what fails |
+| **[BLOG.md](BLOG.md)** | Blog post version - shareable story of the experiment |
+
 ## Key Files
 
 | File | Description |
